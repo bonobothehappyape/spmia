@@ -56,7 +56,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <start-class>com.thoughtmechanix.zipkinsvr.ZipkinServerApplication</start-class>
     <java.version>1.8</java.version>
-    <docker.image.name>johncarnell/tmx-zipkinsvr</docker.image.name>
+    <docker.image.name>dasvestis/tmx-zipkinsvr</docker.image.name>
     <docker.image.tag>chapter9</docker.image.tag>
   </properties>
 
