@@ -8,7 +8,38 @@
   <packaging>jar</packaging>
 
   <name>Eureka Server</name>
-  <description>Eureka Server demo project</description>
+  <description>
+      --------------------------------------------------------------------------------------
+      Eureka Server project
+      --------------------------------------------------------------------------------------
+
+
+      - Highly available: Service discovery needs to be able to support a “hot” clustering
+      environment where service lookups can be shared across multiple nodes in
+      a service discovery cluster. If a node becomes unavailable, other nodes in the
+      cluster should be able to take over.
+
+      - Peer-to-peer: Each node in the service discovery cluster shares the state of a service
+      instance.
+
+      - Load balanced: Service discovery needs to dynamically load balance requests
+      across all service instances to ensure that the service invocations are spread
+      across all the service instances managed by it. In many ways, service discovery
+      replaces the more static, manually managed load balancers used in many early
+      web application implementations.
+
+      - Resilient: The service discovery’s client should “cache” service information
+      locally. Local caching allows for gradual degradation of the service discovery
+      feature so that if service discovery service does become unavailable, applications
+      can still function and locate the services based on the information maintained
+      in its local cache.
+
+      - Fault-tolerant: Service discovery needs to detect when a service instance isn’t
+      healthy and remove the instance from the list of available services that can take
+      client requests. It should detect these faults with services and take action without
+      human intervention.
+
+  </description>
 
   <parent>
     <groupId>org.springframework.boot</groupId>

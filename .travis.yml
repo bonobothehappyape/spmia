@@ -21,7 +21,7 @@ script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - mvn clean package docker:build
   - docker push dasvestis/tmx-licensing-service:chapter9
-  - docker push dasvestis/tmx-organization-service:chapter
+  - docker push dasvestis/tmx-organization-service:chapter9
   - docker push dasvestis/tmx-confsvr:chapter9
   - docker push dasvestis/tmx-eurekasvr:chapter9
   - docker push dasvestis/tmx-zipkinsvr:chapter9
